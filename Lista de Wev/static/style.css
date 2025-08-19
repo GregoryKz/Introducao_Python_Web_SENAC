@@ -1,0 +1,53 @@
+/* Geral da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Títulos */
+h1 {
+    color: #2c3e50;
+}
+
+h2 {
+    color: #34495e;
+}
+
+/* Formulários */
+form {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 300px;
+    border-radius: 5px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    margin: 5px 0;
+    width: 90%;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Resultados */
+p {
+    background-color: #ecf0f1;
+    padding: 5px;
+    border-radius: 3px;
+    width: fit-content;
+}

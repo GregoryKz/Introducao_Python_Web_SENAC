@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>{{texto}}</h1>
+    <p>{{paragrafo}}</p>
+    <h2>{{h2}}</h2>
+    <h3>{{H3python}}</h3>
+
+    <hr>
+    <h2>1. Soma</h2>
+    <form action="/soma" method="post">
+        <input type="number" name="numero1" placeholder="Número 1" required>
+        <input type="number" name="numero2" placeholder="Número 2" required>
+        <button type="submit">Calcular</button>
+    </form>
+    <p>{{resultado_soma}}</p>
+
+    <hr>
+    <h2>2. Subtração</h2>
+    <form action="/subtracao" method="post">
+        <input type="number" name="numero1" placeholder="Número 1" required>
+        <input type="number" name="numero2" placeholder="Número 2" required>
+        <button type="submit">Calcular</button>
+    </form>
+    <p>{{resultado_sub}}</p>
+
+    <hr>
+    <h2>3. Verificar maioridade</h2>
+    <form action="/maioridade" method="post">
+        <input type="number" name="idade" placeholder="Sua idade" required>
+        <button type="submit">Verificar</button>
+    </form>
+    <p>{{resultado_idade}}</p>
+
+    <hr>
+    <h2>4. Contar de 1 até 100 de 2 em 2</h2>
+    <form action="/contar" method="post">
+        <button type="submit">Contar</button>
+    </form>
+    <p>{{resultado_contagem}}</p>
+
+</body>
+</html>
